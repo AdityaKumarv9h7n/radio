@@ -16,3 +16,14 @@ article {
   padding-left: var(#00fff7);
   color: rgb(248, 5, 5);
 }
+hr{
+  color: black;
+  flex-shrink: unset;
+
+}
+audio{
+  color: black;
+  animation: forwards;
+  background-blend-mode: multiply;
+  background-position-x: flex;
+}
