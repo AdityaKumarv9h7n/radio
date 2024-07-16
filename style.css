@@ -1,35 +1,9 @@
-body {
-  background: #bbff00;
-  padding: 0 24px;
-  margin: 0;
-  height: 100vh;
-  color: rgb(228, 244, 4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-flow: row;
-  flex-direction: column-reverse;
+body{
+    background-color: aqua;
+    text-align: center;
+ justify-content: center;
 }
-article {
-  align-self: center;
-  padding-left: var(#00fff7);
-  color: rgb(248, 5, 5);
-}
-hr{border: #6f0fff;
-  color: black;
-size-adjust: 50%;
-animation-name: initial;
-animation-duration: 2s;
-animation-timing-function: ease-out;
-animation-delay: 3s;
-animation-iteration-count: infinite;
-animation-direction: normal;
-
-}
-audio{
-  color: black;
-  animation: forwards;
-  background-blend-mode: multiply;
-  background-position-x: flex;
+ 
+header{
+    text-align: center;
 }
