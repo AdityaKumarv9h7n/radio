@@ -1,9 +1,68 @@
-body{
-    background-color: aqua;
+body {
+    transition: background-color 1s ease;
     text-align: center;
- justify-content: center;
+justify-content: center;
 }
- 
+
+
+
 header{
+text-align: center;
+}
+video{
+height: 30px;
+width: 30px;
+align-items: center;
+}
+hr {
+border: none;
+height: 1px;
+background-color: #000; /* or any color you prefer */
+}
+#my-video,#my-video1{
+width: 299px;
+height: 42px;
+background-color: aliceblue;
+filter: opacity(40%);
+border-radius: 20px;
+fill-opacity: 100%;
+}
+
+
+ /* footer copyright info */
+.tooltip {
+    position: relative;
+    display: inline-block;
+   text-underline-position: below;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
     text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+#container{
+    align-items: center;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    align-items: center;
 }
