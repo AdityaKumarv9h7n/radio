@@ -7,10 +7,31 @@
         
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="assets/logo new.jpg">
+        <link rel="keywords" href="Radio,Radio on Air,All india radio,free radio streaming ">
+        <link href="https://vjs.zencdn.net/8.0.4/video-js.min.css" rel="stylesheet" />
+<script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- for time and date-->
+<script src="https://cdn.jsdelivr.net/npm/luxon@2.3.1/build/global/luxon.min.js"></script>
     </head>
     <body>
         <header>
-            <h1>Home</h1>
+            <h1 id="home">Home</h1>
+            <p>Current Date and Time: <span id="datetime"></span></p>
+
+<script>
+function updateDateTime() {
+    const now = luxon.DateTime.local();
+    document.getElementById('datetime').textContent = now.toFormat('MMMM dd yyyy, hh:mm:ss a');
+}
+
+// Update the time immediately and then every second
+updateDateTime();
+setInterval(updateDateTime, 1000);
+</script>
             <nav>
               <a href="indexIPTV.html">IPTV </a>
             <hr>
@@ -76,10 +97,193 @@
 <audio src="	https://prclive1.listenon.in/" controls></audio>
 <br>
 <hr>
+
+<article>
+  <b>Radio Mirchi Hindi</b>
+</article>
+<br>
+<audio src="https://eu8.fastcast4u.com/proxy/clyedupq/stream" controls></audio>
+<br>
+<hr>
+
+<article>
+  <b>	Hindi Gold Radio</b>
+</article>
+<br>
+<audio src="https://azuracast.vibesounds.in:8010/radio.mp3" controls></audio>
+<br>
+<hr>
+
+<article>
+  <b>shreyaghosal</b>
+</article>
+<br>
+<audio src="https://drive.uber.radio/uber/bollywoodshreyaghosal/icecast.audio" controls></audio>
+<br>
+<hr>
+
+<article>
+  <b>Radio Asha Bhosle</b>
+</article>
+<br>
+<audio src="http://stream.zeno.fm/s8e3x4yqu98uv" controls></audio>
+<br>
+<hr>
+
+<article>
+  <b></b>
+</article>
+<br>
+<audio src="" controls></audio>
+<br>
+<hr>
+
+
+
+<h2><div class="vividh">Vividh Bharati</div></h2>
+
+  <video
+    id="my_video_1"
+    class="video-js vjs-default-skin"
+    controls
+    preload="auto"
+    width="238"
+    height="100"
+  >
+    <source
+      src="https://air.pc.cdn.bitgravity.com/air/live/pbaudio001/playlist.m3u8"
+      type="application/x-mpegURL"
+    />
+  </video>
+
+<script>
+  var player = videojs('my_video_1');
+</script>
+
+
+  
+<br>
+<hr>
+
+<h2> <div class="my-video"> MY CLUB REMIX</div></h2>
+
+<script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+
+<video id="my-video" class="video-js" controls preload="auto" width="640" height="360">
+  <source src="http://stream.zeno.fm/u7eee0hyzp8uv" type="video/mp4">
+</video>
+
+<script>
+  var player = videojs('my-video');
+</script>
+
+
+<br>
+<hr>
+
+<h2> <div class="my-video1">MY RADIO DJ</div></h2>
+
+<script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+
+<video id="my-video" class="video-js" controls preload="auto" width="640" height="360">
+  <source src="http://stream.zeno.fm/84h97t3ewg0uv" type="video/mp4">
+</video>
+
+<script>
+  var player = videojs('my-video');
+</script>
       
-        
+<br>
+<hr>
+
+
+<h3>Hey now you can send me any message which you  can do  through this form</h3>
+
+
+
+<form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+  <input type="hidden" name="access_key" value="b7e18601-9630-4d7b-90ae-c902d4b10197" />
+
+<label for="Name">Enter you Name</label>
+<input type="text" name="Name" id="Name" placeholder="Name">
+<br>
+<label for="Email">Enter you Email</label>
+<input type="email" name="Email" id="Email" placeholder="Email">
+<br>
+
+<label for="Message">Enter you Message</label>
+<textarea name="Message" id="Message" placeholder="write your message here" cols="20" rows="5"></textarea>
+<button>Submit</button>
+
+
+
+
+<script>
+  function updateBackgroundColor() {
+      const now = new Date();
+      const hours = now.getHours();
+      const minutes = now.getMinutes();
+      const seconds = now.getSeconds();
+
+      // Calculate the time of day as a percentage (0-1)
+      const timePercentage = (hours * 3600 + minutes * 60 + seconds) / 86400;
+
+      // Generate RGB values based on the time
+      const r = Math.round(Math.sin(timePercentage * 2 * Math.PI) * 127 + 128);
+      const g = Math.round(Math.sin(timePercentage * 2 * Math.PI + 2 * Math.PI / 3) * 127 + 128);
+      const b = Math.round(Math.sin(timePercentage * 2 * Math.PI + 4 * Math.PI / 3) * 127 + 128);
+
+      // Set the background color
+      document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
+  }
+
+  // Update color every second
+  setInterval(updateBackgroundColor, 1000);
+
+  // Initial update
+  updateBackgroundColor();
+</script>
+
     </body>
+    <br>
+    <br>
     <footer>
-      <p>&copy; 2024 Myself</p>
+     
+      <div class="tooltip">&copy; 2024 Myself
+        <span class="tooltiptext">copyright info</span>
+      </div>
+    
   </footer>
+
+<br> 
+<br>
+<br>
+  <hr>
+
+ 
+ <summary><b>Website Info</b></summary>
+
+  <details>
+    
+      as you know that this profile is own by <a href="https://g.co/kgs/SEjKtUo">Astray Youth</a> so i think you all should follow him to get regular updates 
+   
+  </details>
+
+
+
+<br>
+
+<hr>
+
+
+ 
+<p>Visitor count: <img src="https://visitor-badge.laobi.icu/badge?page_id=AstrayYouth.radio" alt="visitor badge"/></p>
+
+
+
+<hr>
+last edited = 17/7/2024
+
+
 </html>
