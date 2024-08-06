@@ -1,0 +1,56 @@
+main article p span {
+color: #000000;
+background-color: rgb(255, 200, 127);
+}
+a{
+  text-decoration: none;
+  color: #7fff00;
+  
+}
+a div {
+  background-color: black;
+  width: 120px;
+  height: 28px;
+  position: relative;
+  padding-top: 6px;
+  font-size: 15px;
+  border-radius: 8px;
+  align-items: center;
+  text-align: center;
+  
+}
+.fa-youtube,.fa-square-x-twitter,.fa-square-threads,.fa-github,.fa-square-instagram,.fa-square-facebook,.cib-buy-me-a-coffee,.cib-spotify{
+  font-size: 50px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 49%;
+  padding-bottom: 10px;
+  color: black;
+}
+.x{
+  padding-left: 9px ;
+}
+.thread{
+  padding-left: 13px;
+  
+}
+.github{
+  padding-left: 7px;
+}
+.instagram{
+  padding-left: 13px;
+}
+.facebook{
+  padding-left: 13px;
+}
+.coffee{
+  padding-left: 8px;
+  padding-top: 4px;
+}
+.spotify{
+  padding-left: 9px;
+  padding-top: 10px;
+}
+
+
