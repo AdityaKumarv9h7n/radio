@@ -181,30 +181,33 @@ setInterval(updateDateTime, 1000);
 <textarea name="Message" id="Message" placeholder="write your message here" cols="20" rows="5"></textarea>
 <button>Submit</button>
 <script>
-  function updateBackgroundColor() {
-      const now = new Date();
-      const hours = now.getHours();
-      const minutes = now.getMinutes();
-      const seconds = now.getSeconds();
-
-      // Calculate the time of day as a percentage (0-1)
-      const timePercentage = (hours * 3600 + minutes * 60 + seconds) / 86400;
-
-      // Generate RGB values based on the time
-      const r = Math.round(Math.sin(timePercentage * 2 * Math.PI) * 127 + 128);
-      const g = Math.round(Math.sin(timePercentage * 2 * Math.PI + 2 * Math.PI / 3) * 127 + 128);
-      const b = Math.round(Math.sin(timePercentage * 2 * Math.PI + 4 * Math.PI / 3) * 127 + 128);
-
-      // Set the background color
-      document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
+  function getRandomColor() {
+      // Generate a random RGB color
+      const r = Math.floor(Math.random() * 256);
+      const g = Math.floor(Math.random() * 256);
+      const b = Math.floor(Math.random() * 256);
+      return `rgb(${r},${g},${b})`;
   }
 
-  // Update color every second
-  setInterval(updateBackgroundColor, 1000);
+  function updateBackgroundGradient() {
+      // Generate two random colors
+      const color1 = getRandomColor();
+      const color2 = getRandomColor();
+
+      // Set the background to a gradient of the two colors
+      document.body.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
+
+      // Add a smooth transition effect
+      document.body.style.transition = "background 5s";
+  }
+
+  // Update the background gradient every 5 seconds
+  setInterval(updateBackgroundGradient, 5000);
 
   // Initial update
-  updateBackgroundColor();
+  updateBackgroundGradient();
 </script>
+
     </body>
     <br>
     <br>
