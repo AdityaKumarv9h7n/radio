@@ -180,7 +180,7 @@ setInterval(updateDateTime, 1000);
 <label for="Message">Enter you Message</label>
 <textarea name="Message" id="Message" placeholder="write your message here" cols="20" rows="5"></textarea>
 <button>Submit</button>
-<script>
+<!-- <script>
   function getRandomColor() {
       // Generate a random RGB color
       const r = Math.floor(Math.random() * 256);
@@ -203,6 +203,33 @@ setInterval(updateDateTime, 1000);
 
   // Update the background gradient every 5 seconds
   setInterval(updateBackgroundGradient, 5000);
+
+  // Initial update
+  updateBackgroundGradient();
+</script>
+ -->
+
+    <script>
+  function getRandomColor() {
+      // Generate a random RGB color
+      const r = Math.floor(Math.random() * 256);
+      const g = Math.floor(Math.random() * 256);
+      const b = Math.floor(Math.random() * 256);
+      return `rgb(${r},${g},${b})`;
+  }
+
+  function updateBackgroundGradient() {
+      // Generate two random colors
+      const color1 = getRandomColor();
+      const color2 = getRandomColor();
+
+      // Apply the gradient with a smooth transition
+      document.body.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
+      document.body.style.transition = "background 5s"; // Apply transition via JavaScript
+  }
+
+  // Update the background gradient every 10 seconds
+  setInterval(updateBackgroundGradient, 10000);
 
   // Initial update
   updateBackgroundGradient();
